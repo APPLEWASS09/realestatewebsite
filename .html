@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CasaMira Homes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; position: sticky; top: 0; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .hero { background: url('images/hero.jpg') center/cover no-repeat; color: #fff; text-align: center; padding: 100px 20px; }
+    .container { width: 90%; max-width: 1100px; margin: auto; padding: 2rem 0; }
+    section { padding: 3rem 0; }
+    h2 { color: #2c3e50; margin-bottom: 1rem; }
+    .listings, .about, .contact, .floor-plans { background: #f9f9f9; padding: 2rem; border-radius: 10px; }
+    .listings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); overflow: hidden; }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1rem; }
+    .floor-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .floor-images img { width: 100%; border: 1px solid #ddd; border-radius: 8px; }
+    footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; }
+    .download-link { display: inline-block; margin-top: 1rem; color: #2980b9; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CasaMira Homes</h1>
+    <nav>
+      <a href="#listings">Listings</a>
+      <a href="#about">About</a>
+      <a href="#floor-plans">Floor Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to CasaMira Homes</h1>
+    <p>Affordable and quality homes designed for Filipino families</p>
+  </section>
+
+  <section id="listings" class="listings container">
+    <h2>Featured Listings</h2>
+    <div class="listings-grid">
+      <div class="card">
+        <img src="images/2-2.jpg" alt="Townhouse A">
+        <div class="card-body">
+          <h3>Townhouse A</h3>
+          <p>47.03 sqm • 2 Bedrooms • 1 Bathroom</p>
+          <p><strong>₱2,000,000</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/2-3.jpg" alt="Townhouse B">
+        <div class="card-body">
+          <h3>Townhouse B</h3>
+          <p>54.25 sqm • 3 Bedrooms • 2 Bathrooms</p>
+          <p><strong>₱2,500,000</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/2-4.jpg" alt="Townhouse C">
+        <div class="card-body">
+          <h3>Townhouse C</h3>
+          <p>61.7 sqm • 3 Bedrooms • 2 Bathrooms • Carport</p>
+          <p><strong>₱3,000,000</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About CasaMira Homes</h2>
+    <p>CasaMira Homes is developed by Cebu Landmasters, offering affordable yet high-quality housing in Davao and across the Visayas and Mindanao. Designed for Filipino families, CasaMira provides amenities such as gated communities, parks, and clubhouses.</p>
+  </section>
+
+  <section id="floor-plans" class="floor-plans container">
+    <h2>Floor Plans</h2>
+    <ul>
+      <li>Townhouse A MID– 47.03 sqm</li>
+      <li>Townhouse A END – 54.25 sqm</li>
+      <li>Townhouse B MID– 61.69 sqm – 61.70 sqm</li>
+    </ul>
+    <a href="floor-plan.pdf" class="download-link">📥 Download Floor Plan</a>
+    <div class="floor-images">
+      <img src="images/images.jpg" alt="Townhouse A Mid Unit">
+      <img src="images/casa-mira-homes-davao-floor-plan-model-a-end-unit.webp" alt="Townhouse A End Unit">
+      <img src="images/Map.jpg" alt="Map">
+    </div>
+  </section>
+
+<section id="contact" class="contact container">
+<h2>Contact Us</h2>
+<form>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+
+<label for="inquiry">Inquiry Type</label>
+<select id="inquiry" name="inquiry" required>
+<option value="">-- Select --</option>
+<option value="schedule">Schedule a Visit</option>
+<option value="pricing">Request Pricing</option>
+<option value="availability">Check Availability</option>
+<option value="others">Others</option>
+</select>
+
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+
+<button type="submit">📩 Send Inquiry</button>
+</form>
+
+
+<div class="contact-info">
+<h3>Our Office</h3>
+<p><strong>Address:</strong> CasaMira Homes Sales Office, Davao City, Philippines</p>
+<p><strong>Phone:</strong> +63 912 345 6789</p>
+<p><strong>Email:</strong> info@casamirahomes.com</p>
+<p><strong>Office Hours:</strong> Mon - Sat, 9:00 AM - 6:00 PM</p>
+</div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 CasaMira Homes. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

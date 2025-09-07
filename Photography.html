@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Jory Photography</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #000; color: #fff; padding: 1rem; text-align: center; position: sticky; top: 0; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('images/hero-photo.jpg') center/cover no-repeat; color: #fff; text-align: center; padding: 120px 20px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .container { width: 90%; max-width: 1100px; margin: auto; padding: 2rem 0; }
+    section { padding: 3rem 0; }
+    h2 { text-align: center; color: #222; margin-bottom: 2rem; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+    .about, .contact { background: #f9f9f9; padding: 2rem; border-radius: 10px; }
+    form { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #000; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+    form button:hover { background: #444; }
+    footer { background: #000; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jory Photography</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Capturing Moments, Creating Memories</h1>
+    <p>Professional photography services</p>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>Portfolio Gallery</h2>
+    <div class="gallery">
+      <img src="images/bayabas.jpg" alt="Sample Photo 1">
+      <img src="images/lemon.jpg" alt="Sample Photo 2">
+      <img src="images/spike.jpg" alt="Sample Photo 3">
+      <img src="images/graps.jpg" alt="Sample Photo 4">
+      <img src="images/flower.jpg" alt="Sample Photo 5">
+      <img src="images/photo.jpg" alt="Sample Photo 6">
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>Hello! I’m a professional photographer passionate about turning fleeting moments into timeless works of art. Whether it’s weddings, portraits, or corporate events, I ensure every photo tells a story worth remembering.</p>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your inquiry..." required></textarea>
+
+      <button type="submit">📸 Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LensCraft Photography. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
